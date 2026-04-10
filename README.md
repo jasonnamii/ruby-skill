@@ -1,5 +1,7 @@
 # ruby-skill
 
+> 🇰🇷 [한국어 README](./README.ko.md)
+
 **Logical decomposition and meaning verification: refactor code, documents, and content into beautiful higher-level design.**
 
 ## Prerequisites
