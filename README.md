@@ -2,6 +2,10 @@
 
 **Logical decomposition and meaning verification: refactor code, documents, and content into beautiful higher-level design.**
 
+## Prerequisites
+
+- **Claude Cowork or Claude Code** environment
+
 ## Goal
 
 ruby-skill solves the problem of design debt and unclear thinking. Using Russell (structural decomposition — cut to atomic components) and Wittgenstein (meaning verification — does each part say what it should?), it transforms tangled implementations into clarified architecture, unclear docs into precision prose, and muddled content into sharp narrative.
