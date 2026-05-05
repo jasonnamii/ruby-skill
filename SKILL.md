@@ -6,7 +6,7 @@ description: |
   P2: 분해해줘, 평가해줘, 올려줘, 상위설계해줘, 아름답게해줘, decompose, elevate, review.
   P3: logical atomism, structural decomposition, meaning verification, elegant design.
   P5: 분석결과로, 상위설계안으로, .md로.
-  NOT: 단순디버깅(→직접수행), 사업전략(→biz-skill), UI설계(→ui-action-designer), 히트패턴(→hit-skill).
+  NOT: 단순디버깅(→직접수행), 사업전략(→biz-skill), UI설계(→ui-designer), 히트패턴(→hit-skill).
 "@uses":
   - references/russell-frame.md
   - references/wittgenstein-frame.md
@@ -20,7 +20,7 @@ P1: 러비스킬, ruby skill, 러비, 상위설계, 아름다운설계, 논리�
 P2: 분해해줘, 평가해줘, 올려줘, 상위설계해줘, 아름답게해줘, decompose, elevate, review.
 P3: logical atomism, structural decomposition, meaning verification, elegant design, code elevation.
 P5: 분석결과로, 상위설계안으로, .md로.
-NOT: 단순디버깅(→직접수행), 사업전략(→biz-skill), UI설계(→ui-action-designer), 히트패턴(→hit-skill), 인간심리(→human-skill), 스킬수정(→skill-builder).
+NOT: 단순디버깅(→직접수행), 사업전략(→biz-skill), UI설계(→ui-designer), 히트패턴(→hit-skill), 인간심리(→human-skill), 스킬수정(→skill-builder).
 GATE: 산출물(코드/문서/콘텐츠)의 구조적 분해·평가·상위설계 요청 시에만 발동.
 -->
 
@@ -134,8 +134,8 @@ GATE: 산출물(코드/문서/콘텐츠)의 구조적 분해·평가·상위설�
 Phase 1~5 분석 완료 후, 중간 산출물을 **그대로 출력하지 않는다.** 아래 리포트 구조로 재구성한다. 분석 엔진(Phase 1~5)은 "분석", 이 단계는 "표현" — 역할 분리.
 
 
-### 🚨 MUST cascade → paper-engine
-모든 산출물 paper-engine MUST 경유. → `paper-engine/references/_common/cascade-must.md`
+### 🚨 MUST cascade → shaper-skill
+모든 산출물 shaper-skill MUST 경유. → `shaper-skill/references/_common/cascade-must.md`
 
 
 ## 논리 4요소 활용
@@ -153,7 +153,7 @@ Phase 1~5 분석 완료 후, 중간 산출물을 **그대로 출력하지 않는
 
 
 ## §INV NO_WORK_LABEL
-산출물·대화 작업 라벨 ZERO. → `paper-engine/references/no-work-label.md`
+산출물·대화 작업 라벨 ZERO. → `shaper-skill/references/no-work-label.md`
 
 
 ## Gotchas
