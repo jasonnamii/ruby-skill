@@ -28,9 +28,30 @@ GATE: 산출물(코드/문서/콘텐츠)의 구조적 분해·평가·상위설�
 
 **핵심 공식**: 러셀로 뼈대를 자르고, 비트겐슈타인으로 살아있는 의미를 검증하면, 아름다운 상위 설계가 가능하다.
 
+
+## Skill Boundaries
+
+- **하는 것** — 러비스킬(러셀+비트겐슈타인).
+- **안 하는 것** — 단순디버깅(→직접수행), 사업전략(→biz-skill), UI설계(→ui-designer), 히트패턴(→hit-skill).
+
 **아름다움 정의**: 목적에 대해 최소 구조로 최대 의미를 내는 상태
 
 ---
+
+## When to Use
+
+- 사용자가 "분해해줘", "평가해줘", "올려줘", "상위설계해줘", "아름답게해줘" 같은 표현으로 발동
+- 도메인 작업이 필요한 시점
+- **안 쓸 때** — 단순디버깅(→직접수행), 사업전략(→biz-skill), UI설계(→ui-designer), 히트패턴(→hit-skill).
+
+
+## Prerequisites
+
+| # | 체크 | 미충족 시 |
+|---|------|-----------|
+| 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
+| 2 | references/ 폴더 접근 가능 | inline fallback |
+
 
 ## ⛔ 절대 규칙
 
@@ -156,7 +177,35 @@ Phase 1~5 분석 완료 후, 중간 산출물을 **그대로 출력하지 않는
 산출물·대화 작업 라벨 ZERO. → `shaper-skill/references/no-work-label.md`
 
 
-## Gotchas
+## Output Path
+
+| 산출물 | 경로 |
+|---|---|
+| 주 산출물 | `mnt/outputs/ruby-skill_{topic}_{YYYY-MM-DD}.md` |
+| 형식 | 분석결과로, 상위설계안으로, .md로. |
+| 리서치 결과 (해당 시) | `{VAULT}/_skills research/ruby-skill/{YYYY-MM-DD}_{topic}.md` |
+
+## Reference Index
+
+| 파일 | 내용 | 언제 |
+|---|---|---|
+| `references/beauty-criteria.md` | beauty criteria | 해당 단계 진입 시 |
+| `references/domain-adapters.md` | domain adapters | 해당 단계 진입 시 |
+| `references/report-layer.md` | report layer | 해당 단계 진입 시 |
+| `references/russell-frame.md` | russell frame | 해당 단계 진입 시 |
+| `references/wittgenstein-frame.md` | wittgenstein frame | 해당 단계 진입 시 |
+
+
+## Next Phase
+
+본 스킬 작업 후 자연스럽게 이어지는 흐름:
+
+- 후속 작업 → `직접수행`
+- 후속 작업 → `biz-skill`
+- 후속 작업 → `ui-designer`
+- 후속 작업 → `hit-skill`
+
+## Failure Modes (Gotchas)
 
 - **분해 과잉 함정**: 원자까지 분해하되, 분해 자체가 목적이 되면 안 됨. 상위 설계에 필요한 깊이까지만
 - **러셀 편향 함정**: 구조만 완벽하고 의미 검증을 건너뛰면 "맞는 말인데 안 먹힘" 상태
@@ -165,3 +214,11 @@ Phase 1~5 분석 완료 후, 중간 산출물을 **그대로 출력하지 않는
 - **디테일 보존 착각**: 매핑 테이블을 만들었다고 디테일을 보존한 것이 아님. 상위 설계안에서 각 요소의 운명(유지/변환/제거+사유)이 명시되어야 완료
 - **데이터 시트 함정**: 6축 점수표·분해 매핑·검증 체크리스트를 나열식으로 먼저 출력하면 "그래서 뭘 어쩌라고?" 상태. 반드시 판정 문장(Layer 1)이 리포트 첫 줄. 분석 과정은 Layer 3(부록)으로
 - **판정 문장 누락**: 6축 점수는 나오지만 종합 판정이 빠지면 의사결정 불가. Phase 3 완료 시 판정 문장 생성을 반드시 실행
+
+
+## ❌ WRONG vs ✅ CORRECT
+
+```
+❌ WRONG: 트리거 단어만 보고 발동 — 본질·범위 확인 ✗ → 오발동·범위 이탈
+✅ CORRECT: Skill Boundaries·When to Use 확인 후 발동 → 본질 작업만 수행
+```
