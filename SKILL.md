@@ -1,18 +1,7 @@
 ---
 name: ruby-skill
 description: |
-  러비스킬(러셀+비트겐슈타인). 코딩·문서·콘텐츠를 분해→평가→아름다운 상위 설계로 승격. 러셀 구조분해+비트겐슈타인 의미검증 이중 프레임.
-  P1: 러비스킬, ruby skill, 러비, 상위설계, 아름다운설계, 논리분해, 구조분해, 의미검증, 코드리뷰, 문서리뷰, 콘텐츠리뷰, 러셀, 비트겐슈타인.
-  P2: 분해해줘, 평가해줘, 올려줘, 상위설계해줘, 아름답게해줘, decompose, elevate, review.
-  P3: logical atomism, structural decomposition, meaning verification, elegant design.
-  P5: 분석결과로, 상위설계안으로, .md로.
-  NOT: 단순디버깅(→직접수행), 사업전략(→biz-skill), UI설계(→ui-designer), 히트패턴(→hit-skill).
-"@uses":
-  - references/russell-frame.md
-  - references/wittgenstein-frame.md
-  - references/beauty-criteria.md
-  - references/domain-adapters.md
-  - references/report-layer.md
+  러비스킬(러셀+비트겐슈타인). 코딩·문서·콘텐츠를 분해→평가→아름다운 상위 설계로 승격. 러셀 구조분해+비트겐슈타인 의미검증 이중 프레임. 트리거: 러비스킬, ruby skill, 러비, 상위설계, 아름다운설계, 논리분해, 구조분해, 의미검증, 코드리뷰, 문서리뷰, 콘텐츠리뷰, 러셀, 비트겐슈타인, 분해해줘, 평가해줘, 올려줘, 상위설계해줘, 아름답게해줘, decompose, elevate, review. NOT: 단순디버깅(→직접수행), 사업전략(→biz-skill), UI설계(→ui-designer), 히트패턴(→hit-skill).
 ---
 
 <!-- Triggers
@@ -27,7 +16,6 @@ GATE: 산출물(코드/문서/콘텐츠)의 구조적 분해·평가·상위설�
 # Ruby Skill — 러비스킬 (러셀 + 비트겐슈타인)
 
 **핵심 공식**: 러셀로 뼈대를 자르고, 비트겐슈타인으로 살아있는 의미를 검증하면, 아름다운 상위 설계가 가능하다.
-
 
 ## Skill Boundaries
 
@@ -44,14 +32,12 @@ GATE: 산출물(코드/문서/콘텐츠)의 구조적 분해·평가·상위설�
 - 도메인 작업이 필요한 시점
 - **안 쓸 때** — 단순디버깅(→직접수행), 사업전략(→biz-skill), UI설계(→ui-designer), 히트패턴(→hit-skill).
 
-
 ## Prerequisites
 
 | # | 체크 | 미충족 시 |
 |---|------|-----------|
 | 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
 | 2 | references/ 폴더 접근 가능 | inline fallback |
-
 
 ## ⛔ 절대 규칙
 
@@ -154,10 +140,8 @@ GATE: 산출물(코드/문서/콘텐츠)의 구조적 분해·평가·상위설�
 
 Phase 1~5 분석 완료 후, 중간 산출물을 **그대로 출력하지 않는다.** 아래 리포트 구조로 재구성한다. 분석 엔진(Phase 1~5)은 "분석", 이 단계는 "표현" — 역할 분리.
 
-
 ### 🚨 MUST cascade → shaper-skill
 모든 산출물 shaper-skill MUST 경유. → `shaper-skill/references/_common/cascade-must.md`
-
 
 ## 논리 4요소 활용
 
@@ -172,10 +156,8 @@ Phase 1~5 분석 완료 후, 중간 산출물을 **그대로 출력하지 않는
 
 ---
 
-
 ## §INV NO_WORK_LABEL
 산출물·대화 작업 라벨 ZERO. → `shaper-skill/references/no-work-label.md`
-
 
 ## Output Path
 
@@ -195,7 +177,6 @@ Phase 1~5 분석 완료 후, 중간 산출물을 **그대로 출력하지 않는
 | `references/russell-frame.md` | russell frame | 해당 단계 진입 시 |
 | `references/wittgenstein-frame.md` | wittgenstein frame | 해당 단계 진입 시 |
 
-
 ## Next Phase
 
 본 스킬 작업 후 자연스럽게 이어지는 흐름:
@@ -214,7 +195,6 @@ Phase 1~5 분석 완료 후, 중간 산출물을 **그대로 출력하지 않는
 - **디테일 보존 착각**: 매핑 테이블을 만들었다고 디테일을 보존한 것이 아님. 상위 설계안에서 각 요소의 운명(유지/변환/제거+사유)이 명시되어야 완료
 - **데이터 시트 함정**: 6축 점수표·분해 매핑·검증 체크리스트를 나열식으로 먼저 출력하면 "그래서 뭘 어쩌라고?" 상태. 반드시 판정 문장(Layer 1)이 리포트 첫 줄. 분석 과정은 Layer 3(부록)으로
 - **판정 문장 누락**: 6축 점수는 나오지만 종합 판정이 빠지면 의사결정 불가. Phase 3 완료 시 판정 문장 생성을 반드시 실행
-
 
 ## ❌ WRONG vs ✅ CORRECT
 
